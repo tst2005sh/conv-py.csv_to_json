@@ -24,6 +24,6 @@ def csv2json_array():
 				sort_keys=False
 			)
 		)
-	sys.stdout.write("\n")
+		sys.stdout.write("\n")
 
 csv2json_array()
