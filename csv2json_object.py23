@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 
 # Original version from https://www.idiotinside.com/2015/09/18/csv-json-pretty-print-python/
 
@@ -12,12 +12,12 @@ def csv2json(argv):
 	try:
 		opts, args = getopt.getopt(argv,"hi:o:f:",["format="])
 	except getopt.GetoptError:
-		print 'csv_json.py -i <path to inputfile> -o <path to outputfile> [-f pretty]'
+		print('csv_json.py -i <path to inputfile> -o <path to outputfile> [-f pretty]')
 		sys.exit(2)
 
 	for opt, arg in opts:
 		if opt == '-h':
-			print 'csv_json.py -i <path to inputfile> -o <path to outputfile> [-f pretty]'
+			print('csv_json.py -i <path to inputfile> -o <path to outputfile> [-f pretty]')
 			sys.exit()
 		elif opt in ("-i", "--ifile"):
 			input_file = arg
