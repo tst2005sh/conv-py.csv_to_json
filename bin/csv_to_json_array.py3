@@ -20,3 +20,4 @@ sys.stdout.write(json.dumps(
 	separators=(',', ':'),
 	default=None,
 	sort_keys=False))
+sys.stdout.write("\n")

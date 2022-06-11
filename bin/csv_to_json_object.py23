@@ -50,9 +50,8 @@ def csv2json(argv):
 			if format == "pretty":
 				f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '),encoding="utf-8",ensure_ascii=False))
 			else:
-				f.write(json.dumps(data))
+				f.write(json.dumps(data, separators=(',', ':')))
+			f.write('\n')
 
 if __name__ == "__main__":
 	csv2json(sys.argv[1:])
-
-
