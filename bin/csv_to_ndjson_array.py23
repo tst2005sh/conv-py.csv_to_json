@@ -19,7 +19,7 @@ def csv2json_array():
 				cls=None,
 				indent=None,
 				separators=(',', ':'),
-				encoding="utf-8",
+#				encoding="utf-8",
 				default=None,
 				sort_keys=False
 			)
